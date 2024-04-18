@@ -5,14 +5,20 @@ import ru.javabegin.oop.Transport;
 public class Motorbike extends Transport {
 
     private double volume;
+    private final int wheelCount;
 
-    public Motorbike() {
-    }
-
-    public Motorbike(String name, String model, String color, double volume) {
+    public Motorbike(String name, String model, String color, int wheelCount) {
         super(name, model, color);
-        this.volume = volume;
+        this.wheelCount = wheelCount;
     }
+
+    //    public Motorbike() {
+//    }
+//
+//    public Motorbike(String name, String model, String color, double volume) {
+//        super(name, model, color);
+//        this.volume = volume;
+//    }
 
     @Override
     public String toString() {
@@ -26,4 +32,9 @@ public class Motorbike extends Transport {
     public void setVolume(double volume) {
         this.volume = volume;
     }
+
+    public int getWheelCount() {
+        return wheelCount;
+    }
+
 }

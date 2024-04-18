@@ -2,12 +2,12 @@ package ru.javabegin.oop.model.motorbike;
 
 public class Kawasaki extends Motorbike{
 
-    private int year;
+//    private int year;
 
-    public Kawasaki(String name, String model, String color, double volume, int year) {
-        super(name, model, color, volume);
-        this.year = year;
+    public Kawasaki(String name, String model, String color, int wheelCount) {
+        super(name, model, color, wheelCount);
     }
+
 
     public void jump(){
         System.out.println("Kawasaki jump");
@@ -15,6 +15,6 @@ public class Kawasaki extends Motorbike{
 
     @Override
     public String toString() {
-        return "Motorbike {" + "volume=" + getVolume() + " " + getName() + " " + getModel() + " " + year + '}';
+        return "Kawasski {" + "volume=" + getVolume() + " " + getName() + " " + getModel() + " " + getWheelCount() + '}';
     }
 }

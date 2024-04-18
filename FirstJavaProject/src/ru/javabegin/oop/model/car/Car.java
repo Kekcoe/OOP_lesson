@@ -7,6 +7,7 @@ public class Car extends Transport {
 
     private int number;
     private Engine engine;
+    public final int wheelCount = 4;
 
     public Car(String name, String model, String color) {
         super(name, model, color); // перекидываем все значения в родит. конструктор
